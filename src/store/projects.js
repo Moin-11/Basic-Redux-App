@@ -24,3 +24,5 @@ const projectsSlice = createSlice({
     },
   },
 });
+
+export default projectsSlice;

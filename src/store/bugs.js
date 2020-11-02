@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+let lastID = 0;
 const bugSlice = createSlice({
   name: "bugs",
   initialState: [],
@@ -25,6 +25,7 @@ const bugSlice = createSlice({
   },
 });
 
-let lastID = 0;
 export const { AddBug, RemoveBug, ResolveBug } = bugSlice.actions;
 export default bugSlice;
+
+// Selector Functions
