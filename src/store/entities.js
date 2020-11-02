@@ -1,11 +1,12 @@
 import { combineReducers } from "redux";
-import bugsSlice from "./bugs";
-
-import projectsSlice from "./projects";
+import bugsReducer from "./bugs";
+import usersReducer from "./users";
+import projectsReducer from "./projects";
 
 const entitiesReducer = combineReducers({
-  bugs: bugsSlice,
-  projects: projectsSlice,
+  bugs: bugsReducer,
+  projects: projectsReducer,
+  users: usersReducer,
 });
 
 export default entitiesReducer;
